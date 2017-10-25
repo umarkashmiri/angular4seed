@@ -2,8 +2,10 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home', loadChildren: './account/account.module#AccountModule' },
+    { path: '', redirectTo: 'account', pathMatch: 'full' },
+    { path: 'account', loadChildren: './account/account.module#AccountModule' },
+    { path: 'contact', loadChildren: './contact/contact.module#ContactModule' },
+    { path: 'jobs', loadChildren: './jobs/jobs.module#JobsModule' },
     { path: '**', redirectTo: '' }
 ];
 

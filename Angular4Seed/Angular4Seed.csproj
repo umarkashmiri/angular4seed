@@ -8,7 +8,9 @@
     <None Remove="src\app\account\account-routing.ts" />
     <None Remove="src\app\app-routing.ts" />
     <None Remove="src\app\contact\contact.routing.ts" />
+    <None Remove="src\app\jobs\job.models.ts" />
     <None Remove="src\app\jobs\jobs.routing.ts" />
+    <None Remove="src\app\jobs\jobs.service.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +21,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,7 +32,9 @@
     <TypeScriptCompile Include="src\app\account\account-routing.ts" />
     <TypeScriptCompile Include="src\app\app-routing.ts" />
     <TypeScriptCompile Include="src\app\contact\contact.routing.ts" />
+    <TypeScriptCompile Include="src\app\jobs\job.models.ts" />
     <TypeScriptCompile Include="src\app\jobs\jobs.routing.ts" />
+    <TypeScriptCompile Include="src\app\jobs\jobs.service.ts" />
   </ItemGroup>
 
   <Target Name="AngularCliBuild" BeforeTargets="PreBuildEvent">

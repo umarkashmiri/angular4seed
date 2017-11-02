@@ -11,6 +11,7 @@
     <None Remove="src\app\jobs\job.models.ts" />
     <None Remove="src\app\jobs\jobs.routing.ts" />
     <None Remove="src\app\jobs\jobs.service.ts" />
+    <None Remove="src\app\shared\loading\loading.service.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,6 +36,7 @@
     <TypeScriptCompile Include="src\app\jobs\job.models.ts" />
     <TypeScriptCompile Include="src\app\jobs\jobs.routing.ts" />
     <TypeScriptCompile Include="src\app\jobs\jobs.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\loading\loading.service.ts" />
   </ItemGroup>
 
   <Target Name="AngularCliBuild" BeforeTargets="PreBuildEvent">

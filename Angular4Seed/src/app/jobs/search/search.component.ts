@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { JobService } from '../jobs.service';
 import { Job } from '../job.models';
-
+import { LoadingService } from '../../shared/loading/loading.service';
 
 @Component({
     selector: 'app-search',
@@ -16,20 +16,24 @@ export class SearchComponent implements OnInit {
     constructor(
         private route: ActivatedRoute,
         private router: Router,
-        private jobService: JobService
+        private jobService: JobService,
+        private loadingService: LoadingService
     ) {
         this.jobs = new Array<Job>();
     }
 
     ngOnInit() {
+        this.loadingService.show();
         let search: string = this.route.snapshot.params['id'];
         if (search && search.length > 0) {
             this.jobService.search(search).subscribe((result: Array<Job>) => {
                 this.jobs = result;
+                this.loadingService.hide();
             });
         } else {
             this.jobService.search("").subscribe((result: Array<Job>) => {
                 this.jobs = result;
+                this.loadingService.hide();
             });
         }
     }

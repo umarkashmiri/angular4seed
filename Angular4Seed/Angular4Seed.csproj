@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,6 +12,7 @@
     <None Remove="src\app\jobs\job.models.ts" />
     <None Remove="src\app\jobs\jobs.routing.ts" />
     <None Remove="src\app\jobs\jobs.service.ts" />
+    <None Remove="src\app\shared\alert\alert.service.ts" />
     <None Remove="src\app\shared\loading\loading.service.ts" />
   </ItemGroup>
 
@@ -36,6 +38,7 @@
     <TypeScriptCompile Include="src\app\jobs\job.models.ts" />
     <TypeScriptCompile Include="src\app\jobs\jobs.routing.ts" />
     <TypeScriptCompile Include="src\app\jobs\jobs.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\alert\alert.service.ts" />
     <TypeScriptCompile Include="src\app\shared\loading\loading.service.ts" />
   </ItemGroup>
 

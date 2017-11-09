@@ -1,0 +1,11 @@
+<div class="alert alert-dismissible fade show"
+     [class.alert-success]="model.type == 0"
+     [class.alert-danger]="model.type == 1"
+     [class.alert-warning]="model.type == 2"
+     [class.alert-info]="model.type ==  3"
+     role="alert">
+  <button *ngIf="model.isCloseable" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <strong>{{model.message}}</strong>
+</div>

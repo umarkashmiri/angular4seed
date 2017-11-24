@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Angular4Seed.Data\Angular4Seed.Data.csproj" />
+    <ProjectReference Include="..\Angular4Seed.IServices\Angular4Seed.IServices.csproj" />
+    <ProjectReference Include="..\Angular4Seed.Models\Angular4Seed.Models.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,2 +1,12 @@
 .vs/
 /.vscode/launch.json
+Angular4Seed.Data/bin/
+Angular4Seed.Data/obj/
+Angular4Seed.IServices/bin/
+Angular4Seed.IServices/obj/
+Angular4Seed.Models/bin/
+Angular4Seed.Models/obj/
+Angular4Seed.ViewModels/bin/
+Angular4Seed.ViewModels/obj/
+AngularSeed.Services/bin/
+AngularSeed.Services/obj/

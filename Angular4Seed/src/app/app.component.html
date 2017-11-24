@@ -13,6 +13,9 @@
               <a class="nav-link active" routerLink="/account/login" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
             </li>
             <li class="nav-item dropdown">
+              <a class="nav-link active" routerLink="/jobs/search" role="button" aria-haspopup="true" aria-expanded="false">Jobs</a>
+            </li>
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 Pages
               </a>
@@ -80,7 +83,7 @@
               </div>
             </li>
             <!-- Search in right of nav -->
-            <li class="nav-item" class="search">
+            <li class="nav-item search">
               <form class="top_search clearfix">
                 <div class="top_search_con">
                   <input class="s" placeholder="Search Here ..." type="text">
@@ -110,6 +113,7 @@
 
 <div class="container">
   <app-loading></app-loading>
+  <!--<app-alert></app-alert>-->
   <router-outlet></router-outlet>
 </div>
 
